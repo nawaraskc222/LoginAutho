@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
     return Container(
       child: Scaffold(
         appBar: AppBar(
-          title: const Text("home page"),
+          title: const Text("Join us"),
         ),
         // appBar: AppBar(
         //     // shadowColor: Colors.amber,

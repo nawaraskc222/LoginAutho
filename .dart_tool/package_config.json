@@ -68,6 +68,12 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "intl_phone_field",
+      "rootUri": "file:///C:/Users/Mr.Nobody/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/intl_phone_field-3.1.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "lints",
       "rootUri": "file:///C:/Users/Mr.Nobody/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/lints-1.0.1",
       "packageUri": "lib/",
@@ -164,7 +170,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-10-18T10:32:34.162996Z",
+  "generated": "2022-10-21T07:58:10.079122Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }
