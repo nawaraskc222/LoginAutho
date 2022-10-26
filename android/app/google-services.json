@@ -1,77 +1,34 @@
 {
   "project_info": {
-    "project_number": "644998814912",
-    "project_id": "spark-b5ea3",
-    "storage_bucket": "spark-b5ea3.appspot.com"
+    "project_number": "324127605721",
+    "project_id": "nkcproject-e7917",
+    "storage_bucket": "nkcproject-e7917.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:644998814912:android:e46228b8ce98db2f1fe125",
+        "mobilesdk_app_id": "1:324127605721:android:eadbe56d261fe581ac8fc8",
         "android_client_info": {
           "package_name": "com.example.click_counter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "644998814912-1qp5tereoohhe578d0du1gitus5qqph2.apps.googleusercontent.com",
+          "client_id": "324127605721-339kvslou7nk5rjmhguvvagnvdmo76jc.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCNEtxxTjlMaID0SRXZXF5oyiaBwMW-wHk"
+          "current_key": "AIzaSyBszDFloqAFyjMwCFFlSlzR5Bvu9auOPj8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "644998814912-1qp5tereoohhe578d0du1gitus5qqph2.apps.googleusercontent.com",
+              "client_id": "324127605721-339kvslou7nk5rjmhguvvagnvdmo76jc.apps.googleusercontent.com",
               "client_type": 3
-            },
-            {
-              "client_id": "644998814912-099eoiscjr7somkk1lo6bncchuv2mcul.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.spark"
-              }
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:644998814912:android:731fa9bbe27fffa11fe125",
-        "android_client_info": {
-          "package_name": "com.example.spark"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "644998814912-1qp5tereoohhe578d0du1gitus5qqph2.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyCNEtxxTjlMaID0SRXZXF5oyiaBwMW-wHk"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "644998814912-1qp5tereoohhe578d0du1gitus5qqph2.apps.googleusercontent.com",
-              "client_type": 3
-            },
-            {
-              "client_id": "644998814912-099eoiscjr7somkk1lo6bncchuv2mcul.apps.googleusercontent.com",
-              "client_type": 2,
-              "ios_info": {
-                "bundle_id": "com.example.spark"
-              }
             }
           ]
         }

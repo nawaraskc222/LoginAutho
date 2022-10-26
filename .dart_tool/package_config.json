@@ -32,6 +32,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "cloud_firestore",
+      "rootUri": "file:///C:/Users/Mr.Nobody/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore-4.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.16"
+    },
+    {
       "name": "cloud_firestore_platform_interface",
       "rootUri": "file:///C:/Users/Mr.Nobody/Downloads/flutter/.pub-cache/hosted/pub.dartlang.org/cloud_firestore_platform_interface-5.8.2",
       "packageUri": "lib/",
@@ -260,7 +266,7 @@
       "languageVersion": "2.12"
     }
   ],
-  "generated": "2022-10-26T08:28:30.625548Z",
+  "generated": "2022-10-26T13:42:37.252361Z",
   "generator": "pub",
   "generatorVersion": "2.18.2"
 }

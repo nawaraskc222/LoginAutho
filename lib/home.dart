@@ -1,4 +1,5 @@
 import 'package:click_counter/realHome.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 import 'birthday.dart';
@@ -14,6 +15,8 @@ class Home extends StatefulWidget {
 }
 
 class _HomeState extends State<Home> {
+  late String _email, _password;
+  final auth = FirebaseAuth.instance;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -45,13 +48,26 @@ class _HomeState extends State<Home> {
                     left: 35),
                 child: Column(
                   children: [
-                    TextField(
+                    TextFormField(
+                      keyboardType: TextInputType.emailAddress,
+                      obscureText: false,
+                      enableSuggestions: true,
+                      autocorrect: false,
                       decoration: InputDecoration(
                           fillColor: Colors.amber,
                           filled: true,
                           hintText: "email",
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10))),
+                      validator: (value) {
+                        if (value!.isEmpty ||
+                            !RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$')
+                                .hasMatch(value)) {
+                          return "Enter Correct Email Address";
+                        } else {
+                          return null;
+                        }
+                      },
                     ),
                     // const Padding(padding: EdgeInsets.all(10)),
 
@@ -59,8 +75,10 @@ class _HomeState extends State<Home> {
                       height: 30,
                     ),
 
-                    TextField(
+                    TextFormField(
                       obscureText: true,
+                      enableSuggestions: false,
+                      autocorrect: false,
                       // obscureText: true, thi used for password
                       decoration: InputDecoration(
                           fillColor: Colors.amber,
@@ -68,6 +86,15 @@ class _HomeState extends State<Home> {
                           hintText: "password ",
                           border: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10))),
+                      validator: (value) {
+                        if (value!.isEmpty ||
+                            !RegExp(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$')
+                                .hasMatch(value)) {
+                          return "Enter Correct Email Address";
+                        } else {
+                          return null;
+                        }
+                      },
                     ),
                     TextButton(
                       onPressed: () {
@@ -88,6 +115,9 @@ class _HomeState extends State<Home> {
                     ),
                     TextButton(
                       onPressed: () {
+                        auth.signInWithEmailAndPassword(
+                            email: _email, password: _password);
+
                         Navigator.push(
                           context,
                           MaterialPageRoute(
@@ -105,7 +135,7 @@ class _HomeState extends State<Home> {
                     ),
                     Container(
                       // padding: const EdgeInsets.only(left: 140, top: 500, right: 45),
-                      padding: EdgeInsets.only(
+                      padding: const EdgeInsets.only(
                           // top: MediaQuery.of(context).size.height * 0.70,
                           right: 34,
                           left: 130),
@@ -114,7 +144,7 @@ class _HomeState extends State<Home> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => emailRegister()),
+                                builder: (context) => const emailRegister()),
                           );
                         },
                         style: TextButton.styleFrom(

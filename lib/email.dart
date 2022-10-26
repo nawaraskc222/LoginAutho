@@ -1,3 +1,5 @@
+import 'package:firebase_auth/firebase_auth.dart';
+
 import 'package:flutter/material.dart';
 
 import 'name.dart';
@@ -12,6 +14,9 @@ class emailRegister extends StatefulWidget {
 
 // ignore: camel_case_types
 class _emailRegisterState extends State<emailRegister> {
+  late String _email, _password;
+  final auth = FirebaseAuth.instance;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +36,13 @@ class _emailRegisterState extends State<emailRegister> {
                   height: 50,
                 ),
                 TextFormField(
+                  onChanged: ((value) {
+                    setState() {
+                      _email = value.trim();
+                    }
+                  }),
                   obscureText: false,
+                  keyboardType: TextInputType.emailAddress,
                   // obscureText: pass,
                   decoration: const InputDecoration(
                     labelText: "Email", //babel text
@@ -55,7 +66,15 @@ class _emailRegisterState extends State<emailRegister> {
                   },
                 ),
                 TextFormField(
+                  onChanged: ((value) {
+                    setState() {
+                      _password = value.trim();
+                    }
+                  }),
                   obscureText: true,
+                  enableSuggestions: false,
+                  autocorrect: false,
+                  // keyboardType: TextInputType.visiblePassword,
                   decoration: const InputDecoration(
                     labelText: "password", //babel text
                     hintText: "Enter your password", //hint text
@@ -79,6 +98,8 @@ class _emailRegisterState extends State<emailRegister> {
                 ),
                 TextButton(
                     onPressed: () {
+                      auth.createUserWithEmailAndPassword(
+                          email: _email, password: _password);
                       Navigator.push(
                         context,
                         MaterialPageRoute(
