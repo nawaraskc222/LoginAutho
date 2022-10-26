@@ -15,7 +15,7 @@ class _realHomeState extends State<realHome> {
     return Container(
       child: AppBar(
         title: const Text(
-          "real page",
+          "you are logged in",
         ),
       ),
     );

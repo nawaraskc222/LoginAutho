@@ -2,6 +2,7 @@ import 'package:click_counter/realHome.dart';
 import 'package:flutter/material.dart';
 
 import 'birthday.dart';
+import 'email.dart';
 import 'forget.dart';
 import 'name.dart';
 
@@ -59,6 +60,7 @@ class _HomeState extends State<Home> {
                     ),
 
                     TextField(
+                      obscureText: true,
                       // obscureText: true, thi used for password
                       decoration: InputDecoration(
                           fillColor: Colors.amber,
@@ -112,7 +114,7 @@ class _HomeState extends State<Home> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const MyLogin()),
+                                builder: (context) => emailRegister()),
                           );
                         },
                         style: TextButton.styleFrom(

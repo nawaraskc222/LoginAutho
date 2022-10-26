@@ -1,5 +1,3 @@
-import 'package:country_code_picker/country_code_picker.dart';
-
 import 'package:flutter/material.dart';
 
 class Number extends StatefulWidget {
@@ -64,7 +62,8 @@ class _NumberState extends State<Number> {
                 Container(
                   // ignore: prefer_const_constructors
                   child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 10),
                     child: const Text(
                       "Enter your phone number to continue , we'll send you OTP i order to signup",
                       textAlign: TextAlign.center,
@@ -76,7 +75,9 @@ class _NumberState extends State<Number> {
                   height: 30,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 15, vertical: 5),
+                  // ignore: prefer_const_constructors
                   decoration: BoxDecoration(
                     color: Colors.amber,
                   ),
