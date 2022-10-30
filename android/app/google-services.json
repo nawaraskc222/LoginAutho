@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "324127605721",
-    "project_id": "nkcproject-e7917",
-    "storage_bucket": "nkcproject-e7917.appspot.com"
+    "project_number": "30748614500",
+    "project_id": "nawaraspro",
+    "storage_bucket": "nawaraspro.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:324127605721:android:eadbe56d261fe581ac8fc8",
+        "mobilesdk_app_id": "1:30748614500:android:9debf593b61873a8946471",
         "android_client_info": {
           "package_name": "com.example.click_counter"
         }
       },
       "oauth_client": [
         {
-          "client_id": "324127605721-339kvslou7nk5rjmhguvvagnvdmo76jc.apps.googleusercontent.com",
+          "client_id": "30748614500-n93col1954tk7e2c98qfkic0d9vki4a0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.click_counter",
+            "certificate_hash": "ebe6d88dc1e84a4a48496a3237565af6ec6a85c2"
+          }
+        },
+        {
+          "client_id": "30748614500-k56mrbk3bai95kp1ue9j3uk6ho2qjg89.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBszDFloqAFyjMwCFFlSlzR5Bvu9auOPj8"
+          "current_key": "AIzaSyDrV9g7kTcRogEb7xSHo_V67g3tp0yXPwE"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "324127605721-339kvslou7nk5rjmhguvvagnvdmo76jc.apps.googleusercontent.com",
+              "client_id": "30748614500-k56mrbk3bai95kp1ue9j3uk6ho2qjg89.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
